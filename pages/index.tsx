@@ -10,10 +10,11 @@ interface ImageCardProps {
 
 interface ImageLoaderProps {
   src: string;
+  width: number;
 }
 
-const imageLoader = ({ src }: ImageLoaderProps) => {
-  return `${src}?q=75`;
+const imageLoader = ({ src, width }: ImageLoaderProps) => {
+  return `${src}?w=${width}&q=75`;
 };
 
 const ImageCard = ({ image }: ImageCardProps): ReactElement => (

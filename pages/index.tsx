@@ -34,6 +34,8 @@ const InfoCard = () => (
             layout="responsive"
             width="100"
             height="100"
+            priority={true}
+            sizes="150px"
           />
         </div>
         <h1>Hi, my name is Jeroen Ooms</h1>

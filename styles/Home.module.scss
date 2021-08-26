@@ -1,0 +1,209 @@
+.tooltip {
+  background: white;
+  border-radius: 5px;
+  color: #3c9afc;
+  padding: 5px 10px;
+  position: absolute;
+  white-space: nowrap;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+.tooltip .hashtag {
+  opacity: 0.5;
+}
+.tooltip .username {
+  color: #0367cf;
+  font-weight: bold;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card {
+  background-position: 50%;
+  background-size: cover;
+  flex: 1 0 20%;
+  height: auto;
+  position: relative;
+  width: 20%;
+  order: 2;
+}
+.card:nth-child(-n + 10) {
+  order: 0;
+}
+.card img {
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+.card img {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.cardInfo {
+  background: #3c9afc;
+  flex: 1 0 100%;
+  order: 1;
+  position: relative;
+}
+.infoContent {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 1em;
+}
+
+.avatarContainer {
+  border-radius: 50%;
+  border: 3px solid white;
+  margin: 10px auto;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+}
+
+.avatar {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (min-width: 1350px) {
+  .avatarContainer {
+    position: absolute;
+    left: calc(50% - 78px);
+    top: -78px;
+    width: 150px;
+    height: 150px;
+  }
+}
+.cardInfo h1 {
+  color: white;
+  font-size: 1.5em;
+  font-weight: normal;
+  margin: 0 0 0.5em;
+  text-align: center;
+}
+.cardInfo h2 {
+  color: white;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 2;
+  margin: 0 0 1em;
+  text-align: center;
+}
+.links {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 70%;
+}
+.links a {
+  background: white;
+  border: 2px solid #3c9afc;
+  border-radius: 50%;
+  color: #3c9afc;
+  display: inline-block;
+  height: 30px;
+  margin: 0 0.25em 0.5em;
+  position: relative;
+  transition: all 0.5s ease;
+  width: 30px;
+}
+.links a .tooltip {
+  left: 50%;
+  top: -1.3em;
+  transform: translate(-50%, -1.3em);
+}
+.links a:hover {
+  background: #3c9afc;
+  border: 2px solid white;
+  color: white;
+}
+.links a:hover .tooltip {
+  opacity: 1;
+}
+.links .fa {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .card:nth-child(-n + 5) {
+    order: 0;
+  }
+  .card:nth-child(n + 6) {
+    order: 2;
+  }
+
+  .info h1 {
+    font-size: 1.75em;
+  }
+  .info h2 {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  .info .links {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .tooltip {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .card:nth-child(-n + 6) {
+    order: 0;
+  }
+  .card:nth-child(n + 7) {
+    order: 2;
+  }
+  .card:nth-child(38),
+  .card:nth-child(39),
+  .card:nth-child(40) {
+    display: none;
+  }
+
+  .cardInfo {
+    flex: 1 0 60%;
+    position: relative;
+  }
+  .cardInfo .info {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .cardInfo h1 {
+    margin-top: 90px;
+  }
+  .cardInfo h2 {
+    margin: 0 0 1em;
+  }
+  .links a {
+    height: 35px;
+    margin: 0 0.5em 0.5em;
+    width: 35px;
+  }
+  .links a:hover .tooltip {
+    opacity: 1;
+  }
+  .links .fa {
+    font-size: 20px;
+    line-height: 35px;
+  }
+}

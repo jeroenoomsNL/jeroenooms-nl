@@ -8,9 +8,18 @@ interface ImageCardProps {
   image: number;
 }
 
+interface ImageLoaderProps {
+  src: string;
+}
+
+const imageLoader = ({ src }: ImageLoaderProps) => {
+  return `${src}?q=75`;
+};
+
 const ImageCard = ({ image }: ImageCardProps): ReactElement => (
   <div className={styles.card}>
     <Image
+      loader={imageLoader}
       src={`/images/${image}.jpeg`}
       width="300"
       height="300"

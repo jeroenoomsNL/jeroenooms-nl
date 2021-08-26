@@ -1,5 +1,4 @@
 import Head from "next/head";
-import image from "next/image";
 import Image from "next/image";
 import { ReactElement, useEffect, useState } from "react";
 import styles from "../styles/Home.module.scss";
@@ -8,20 +7,10 @@ interface ImageCardProps {
   image: number;
 }
 
-interface ImageLoaderProps {
-  src: string;
-  width: number;
-}
-
-const imageLoader = ({ src, width }: ImageLoaderProps) => {
-  return `${src}?w=${width}&q=75`;
-};
-
 const ImageCard = ({ image }: ImageCardProps): ReactElement => (
   <div className={styles.card}>
     <Image
-      loader={imageLoader}
-      src={`/images/${image}.jpeg`}
+      src={`/images/${image}.jpg`}
       width="300"
       height="300"
       alt="Image"
@@ -38,14 +27,15 @@ const InfoCard = () => (
       <div className={styles.infoContent}>
         <div className={styles.avatarContainer}>
           <Image
-            src="/images/avatar.jpeg"
+            src="/images/avatar.jpg"
             className={styles.avatar}
             alt="Jeroen Ooms - frontend developer"
             layout="responsive"
             width="100"
             height="100"
             priority={true}
-            sizes="150px"
+            sizes="250px"
+            quality="100"
           />
         </div>
         <h1>Hi, my name is Jeroen Ooms</h1>
@@ -99,10 +89,10 @@ const InfoCard = () => (
 
 export default function Home() {
   const images: number[] = Array.from(Array(20).keys());
-  const [imageSet, setImages] = useState(images);
+  const [imageSet, setImages] = useState([...images].slice(0, 12));
 
   useEffect(() => {
-    setImages(images.sort(() => 0.5 - Math.random()));
+    setImages([...images].sort(() => 0.5 - Math.random()).slice(0, 12));
   }, []);
 
   return (
@@ -116,12 +106,13 @@ export default function Home() {
           href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
         />
       </Head>
-
-      <main className={styles.cards}>
-        {imageSet.map((image) => (
-          <ImageCard image={image} key={`image-${image}`} />
-        ))}
-        <InfoCard />
+      <main>
+        <div className={styles.cards}>
+          {imageSet.map((image) => (
+            <ImageCard image={image} key={`image-${image}`} />
+          ))}
+          <InfoCard />
+        </div>
       </main>
     </div>
   );

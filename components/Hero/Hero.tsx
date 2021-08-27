@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { ReactElement, useEffect, useState } from "react";
-import styles from "../styles/Hero.module.scss";
+import { ExternalLink } from "../ExternalLink/ExternalLink";
+import { Github, Linkedin, Twitter } from "../Icons/Icons";
+import styles from "./Hero.module.scss";
 
 interface ImageProps {
   key: string;
@@ -181,34 +183,22 @@ const InfoCard = () => (
 
         <ul className={styles.icons}>
           <li>
-            <a
+            <ExternalLink
               href="https://twitter.com/jeroenooms"
-              target="_blank"
-              rel="noreferrer"
-              title="Jeroen Ooms on Twitter"
-            >
-              <i className="fa fa-twitter" aria-label="Twitter"></i>
-            </a>
+              label={<Twitter />}
+            />
           </li>
           <li>
-            <a
+            <ExternalLink
               href="https://nl.linkedin.com/in/jeroenooms"
-              target="_blank"
-              rel="noreferrer"
-              title="Jeroen Ooms on Linkedin"
-            >
-              <i className="fa fa-linkedin" aria-label="Linkedin"></i>
-            </a>
+              label={<Linkedin />}
+            />
           </li>
           <li>
-            <a
+            <ExternalLink
               href="https://github.com/jeroenoomsNL"
-              target="_blank"
-              rel="noreferrer"
-              title="Jeroen Ooms on Github"
-            >
-              <i className="fa fa-github" aria-label="Github"></i>
-            </a>
+              label={<Github />}
+            />
           </li>
         </ul>
       </div>
@@ -217,11 +207,11 @@ const InfoCard = () => (
 );
 
 export const Hero = () => {
-  const [imageSet, setImages] = useState([...images].slice(0, 12));
+  const [imageSet, setImages] = useState([...images].slice(0, 20));
 
   useEffect(() => {
     const sortImages = () =>
-      setImages([...images].sort(() => 0.5 - Math.random()).slice(0, 12));
+      setImages([...images].sort(() => 0.5 - Math.random()).slice(0, 20));
 
     setTimeout(sortImages, 20000);
   }, []);

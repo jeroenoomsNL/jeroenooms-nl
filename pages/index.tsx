@@ -1,10 +1,9 @@
 import Head from "next/head";
-import { useState } from "react";
-import { Hero } from "../components/Hero";
+import { Footer } from "../components/Footer/Footer";
+import { Hero } from "../components/Hero/Hero";
+import { TechStack } from "../components/TechStack/TechStack";
 
 export default function Home() {
-  const [gameActive, setGameStatus] = useState(false);
-
   return (
     <>
       <Head>
@@ -22,6 +21,8 @@ export default function Home() {
       </Head>
       <main>
         <Hero />
+        <TechStack />
+        <Footer />
       </main>
     </>
   );

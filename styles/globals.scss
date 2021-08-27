@@ -1,7 +1,10 @@
 :root {
   --color-white: #ffffff;
+  --color-light-grey: #eeeeee;
   --color-blue: #3c9afc;
   --color-dark-blue: #0058b6;
+
+  --max-width: 1600px;
 }
 
 html,
@@ -9,16 +12,51 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Roboto Condensed", sans-serif;
+  color: var(--color-blue);
 }
 
 a {
   color: var(--color-blue);
 
   &:hover {
-    color: var(--color-dark-blue);
+    text-decoration: underline double white;
+  }
+}
+
+a.button {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+
+  svg {
+    margin-left: 12px;
+  }
+
+  &:hover {
+    background-color: var(--color-dark-blue);
   }
 }
 
 * {
   box-sizing: border-box;
+}
+
+.wrapper {
+  padding: 24px;
+  margin: 0 auto;
+
+  @media only screen and (min-width: 1350px) {
+    max-width: 60%;
+  }
+
+  @media only screen and (min-width: 1900px) {
+    max-width: 66.6666666%;
+  }
+
+  @media only screen and (min-width: 3000px) {
+    max-width: 50%;
+  }
 }

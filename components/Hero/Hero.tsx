@@ -186,18 +186,21 @@ const InfoCard = () => (
             <ExternalLink
               href="https://twitter.com/jeroenooms"
               label={<Twitter />}
+              title="Twitter"
             />
           </li>
           <li>
             <ExternalLink
               href="https://nl.linkedin.com/in/jeroenooms"
               label={<Linkedin />}
+              title="Linkedin"
             />
           </li>
           <li>
             <ExternalLink
               href="https://github.com/jeroenoomsNL"
               label={<Github />}
+              title="Github"
             />
           </li>
         </ul>

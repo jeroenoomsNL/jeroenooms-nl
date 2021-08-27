@@ -14,7 +14,7 @@ export default function Home() {
           content="Jeroen Ooms, Dutch web dev who likes code, tech, running and craf beers"
         />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href="http://www.jeroenooms.nl" />
+        <link rel="canonical" href="https://www.jeroenooms.nl" />
         <link
           rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"

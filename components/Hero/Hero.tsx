@@ -164,9 +164,9 @@ const InfoCard = () => (
           />
         </div>
         <h1>
-          Hi, I&apos;m <strong>Jeroen Ooms</strong>!
+          Hi, my name is <strong>Jeroen Ooms</strong>!
         </h1>
-        <h2>
+        <p>
           I&apos;m a Dutch front-end developer.
           <br />
           Besides{" "}
@@ -179,7 +179,7 @@ const InfoCard = () => (
             code
           </a>{" "}
           I like tech, running, comics and craft beer.
-        </h2>
+        </p>
 
         <ul className={styles.icons}>
           <li>

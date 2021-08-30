@@ -159,7 +159,7 @@ const InfoCard = () => (
             width="100"
             height="100"
             priority={true}
-            sizes="max-width(1349px) 100w, max-width(1999px) 150w, max-width(2999px) 200w, 250w"
+            sizes="(max-width: 1349px) 100px, (max-width: 1999px) 150px, 200px"
             quality="100"
           />
         </div>

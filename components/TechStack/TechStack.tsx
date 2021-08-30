@@ -26,10 +26,7 @@ export const TechStack = () => (
       </div>
       <div className={styles.techBlock}>
         <h3>
-          {" "}
-          <object style={{ height: "30px", width: "auto" }}>
-            <ContentfulLogo />
-          </object>
+          <ContentfulLogo />
         </h3>
         <p>
           A very powerfull headless content management system with graphql
@@ -45,9 +42,7 @@ export const TechStack = () => (
       </div>
       <div className={styles.techBlock}>
         <h3>
-          <object style={{ height: "30px", width: "auto" }}>
-            <NetlifyLogo />
-          </object>
+          <NetlifyLogo />
         </h3>
         <p>
           An intuitive Git-based workflow and powerful serverless platform to

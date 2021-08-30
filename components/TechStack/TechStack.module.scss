@@ -14,7 +14,11 @@
   flex-direction: column;
 
   @media only screen and (min-width: 600px) {
-    width: 30%;
+    width: calc(50% - 12px);
+  }
+
+  @media only screen and (min-width: 900px) {
+    width: calc(33.3333% - 24px);
   }
 
   h3 {

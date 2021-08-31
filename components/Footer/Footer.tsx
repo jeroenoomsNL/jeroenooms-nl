@@ -5,12 +5,18 @@ export const Footer = () => (
   <footer className={styles.footer}>
     <div className="wrapper">
       Created by Jeroen Ooms with{" "}
-      <ExternalLink href="https://nextjs.org" label="Next.js" title="Next.js" />{" "}
+      <ExternalLink
+        href="https://nextjs.org"
+        label="Next.js"
+        title="Next.js"
+        className="light"
+      />{" "}
       and{" "}
       <ExternalLink
         href="https://fontawesome.com/license"
         label="Font Awesome"
         title="Font Awesome license"
+        className="light"
       />
     </div>
   </footer>

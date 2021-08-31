@@ -170,15 +170,13 @@ const InfoCard = () => (
           I&apos;m a Dutch front-end developer.
           <br />
           Besides{" "}
-          <a
+          <ExternalLink
             href="https://github.com/jeroenoomsNL"
-            target="_blank"
-            rel="noreferrer"
+            label="code"
             title="Jeroen Ooms on Github"
-          >
-            code
-          </a>{" "}
-          I like tech, running, comics and craft beer.
+            className="light"
+          />{" "}
+          I like tech, running, comics and craft beers.
         </p>
 
         <ul className={styles.icons}>

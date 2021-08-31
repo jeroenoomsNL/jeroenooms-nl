@@ -5,10 +5,22 @@ interface ExternalLinkProps {
   href: string;
   label: string | ReactElement;
   title?: string;
+  className?: string;
 }
 
-export const ExternalLink = ({ href, title, label }: ExternalLinkProps) => (
-  <a href={href} target="_blank" rel="noreferrer" title={title}>
+export const ExternalLink = ({
+  href,
+  title,
+  label,
+  className,
+}: ExternalLinkProps) => (
+  <a
+    href={href}
+    target="_blank"
+    rel="noreferrer"
+    title={title}
+    className={className}
+  >
     {label}
   </a>
 );

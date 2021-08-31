@@ -168,7 +168,12 @@ const InfoCard = () => (
         </h1>
         <p>
           I&apos;m a Dutch front-end developer at{" "}
-          <ExternalLink href="https://xebia.com" label="Xebia" />
+          <ExternalLink
+            href="https://xebia.com"
+            label="Xebia"
+            className="light"
+          />
+          .
           <br />
           Besides{" "}
           <ExternalLink

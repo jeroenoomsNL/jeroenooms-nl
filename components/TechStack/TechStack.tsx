@@ -19,7 +19,7 @@ export const TechStack = () => (
         <ExternalLink href="https://jamstack.org/" label="JAM stack" />, which
         literally means JavaScript, API &amp; Markup. With a JAM stack
         architecture, developers are able to build fast, secure and scalable web
-        applications
+        applications.
       </p>
     </article>
 

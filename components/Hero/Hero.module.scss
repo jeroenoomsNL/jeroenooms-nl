@@ -1,3 +1,5 @@
+@import "../../styles/breakpoints";
+
 .cards {
   background: var(--color-dark-blue);
   display: flex;
@@ -24,7 +26,7 @@
     display: none;
   }
 
-  @media only screen and (min-width: 900px) {
+  @include breakpoint("medium") {
     width: 20%;
 
     &:nth-child(-n + 6) {
@@ -40,7 +42,7 @@
     }
   }
 
-  @media only screen and (min-width: 1350px) {
+  @include breakpoint("large") {
     width: 20%;
 
     &:nth-child(-n + 7) {
@@ -56,7 +58,7 @@
     }
   }
 
-  @media only screen and (min-width: 1900px) {
+  @include breakpoint("huge") {
     width: calc(100% / 6);
 
     &:nth-child(-n + 8) {
@@ -72,7 +74,7 @@
     }
   }
 
-  @media only screen and (min-width: 3000px) {
+  @include breakpoint("insane") {
     width: calc(100% / 8);
 
     &:nth-child(-n + 11) {
@@ -96,16 +98,16 @@
   position: relative;
   z-index: 2;
 
-  @media only screen and (min-width: 1350px) {
+  @include breakpoint("large") {
     flex: 1 0 60%;
     position: relative;
   }
 
-  @media only screen and (min-width: 1900px) {
+  @include breakpoint("huge") {
     flex: 1 0 66.6666666%;
   }
 
-  @media only screen and (min-width: 3000px) {
+  @include breakpoint("insane") {
     flex: 1 0 50%;
   }
 
@@ -120,15 +122,15 @@
     margin: 0 0 0.5em;
     text-align: center;
 
-    @media only screen and (min-width: 600px) {
+    @include breakpoint("small") {
       font-size: 1.75em;
     }
 
-    @media only screen and (min-width: 1350px) {
+    @include breakpoint("large") {
       margin-top: 2em;
     }
 
-    @media only screen and (min-width: 1900px) {
+    @include breakpoint("huge") {
       font-size: 2em;
     }
   }
@@ -139,22 +141,22 @@
     margin: 0 0 1em;
     text-align: center;
 
-    @media only screen and (min-width: 600px) {
+    @include breakpoint("small") {
       font-size: 1.2em;
     }
 
-    @media only screen and (min-width: 1350px) {
+    @include breakpoint("large") {
       margin: 0 0 1em;
     }
 
-    @media only screen and (min-width: 1900px) {
+    @include breakpoint("huge") {
       font-size: 1.5em;
     }
   }
 }
 
 .info {
-  @media only screen and (min-width: 1350px) {
+  @include breakpoint("large") {
     align-items: center;
     bottom: 0;
     display: flex;
@@ -171,7 +173,7 @@
   max-width: 600px;
   padding: 1em;
 
-  @media only screen and (min-width: 1350px) {
+  @include breakpoint("large") {
     max-width: 50vw;
   }
 }
@@ -185,7 +187,7 @@
   width: 100px;
   height: 100px;
 
-  @media only screen and (min-width: 1350px) {
+  @include breakpoint("large") {
     border-width: 4px;
     margin: 0;
     position: absolute;
@@ -195,14 +197,14 @@
     height: 150px;
   }
 
-  @media only screen and (min-width: 2000px) {
+  @include breakpoint("huge") {
     left: calc(50% - 104px);
     top: -104px;
     width: 200px;
     height: 200px;
   }
 
-  @media only screen and (min-width: 3000px) {
+  @include breakpoint("insane") {
     left: calc(50% - 129px);
     top: -129px;
     width: 250px;

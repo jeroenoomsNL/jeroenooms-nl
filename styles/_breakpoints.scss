@@ -1,0 +1,17 @@
+$breakpoints: (
+  "small": 600px,
+  "medium": 900px,
+  "large": 1350px,
+  "huge": 1900px,
+  "insane": 3000px,
+) !default;
+
+@mixin breakpoint($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint `#{$breakpoint}` does not exist.";
+  }
+}

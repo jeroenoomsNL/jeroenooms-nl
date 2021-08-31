@@ -4,7 +4,7 @@ import styles from "./Footer.module.scss";
 export const Footer = () => (
   <footer className={styles.footer}>
     <div className="wrapper">
-      Created by Jeroen Ooms with{" "}
+      Created by <strong>Jeroen Ooms</strong> with{" "}
       <ExternalLink
         href="https://nextjs.org"
         label="Next.js"

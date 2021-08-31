@@ -17,15 +17,9 @@ export const TechStack = () => (
       <p>
         Every developer must have it&apos;s preferred tech stack. Mine is the{" "}
         <ExternalLink href="https://jamstack.org/" label="JAM stack" />, which
-        literally means JavaScript, API & Markup.
-      </p>
-      <p>
-        Jamstack is an architecture designed to make the web faster, more
-        secure, and easier to scale. It builds on many of the tools and
-        workflows which developers love, and which bring maximum productivity.
-        The core principles of pre-rendering, and decoupling, enable sites and
-        applications to be delivered with greater confidence and resilience than
-        ever before. Explore more of the benefits of Jamstack.
+        literally means JavaScript, API &amp; Markup. With a JAM stack
+        architecture, developers are able to build fast, secure and scalable web
+        applications
       </p>
     </article>
 

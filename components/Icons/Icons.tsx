@@ -9,7 +9,7 @@ export const Github = ({ style, className }: IconProps) => (
     role="img"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 496 512"
-    style={style || (!className && { height: "20px" })}
+    style={style}
     className={className}
   >
     <path
@@ -25,7 +25,7 @@ export const Linkedin = ({ style, className }: IconProps) => (
     role="img"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 448 512"
-    style={style || (!className && { height: "20px" })}
+    style={style}
     className={className}
   >
     <path
@@ -41,7 +41,7 @@ export const Twitter = ({ style, className }: IconProps) => (
     role="img"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 512 512"
-    style={style || (!className && { height: "20px" })}
+    style={style}
     className={className}
   >
     <path
@@ -59,7 +59,7 @@ export const ArrowRight = ({ style, className }: IconProps) => (
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 448 512"
     preserveAspectRatio=""
-    style={style || (!className && { height: "20px" })}
+    style={style}
     className={className}
   >
     <path
@@ -75,7 +75,7 @@ export const NetlifyLogo = ({ style, className }: IconProps) => (
     xmlns="http://www.w3.org/2000/svg"
     role="img"
     aria-label="Netlify"
-    style={style || (!className && { height: "20px" })}
+    style={style}
     className={className}
   >
     <radialGradient

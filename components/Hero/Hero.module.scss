@@ -238,3 +238,13 @@
     }
   }
 }
+
+.icon {
+  transition: transform 0.1s ease-out;
+  &:hover {
+    transform: scale(1.3);
+  }
+  &:active {
+    transform: scale(1.5);
+  }
+}

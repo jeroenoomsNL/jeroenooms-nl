@@ -189,21 +189,21 @@ const InfoCard = () => (
           <li>
             <ExternalLink
               href="https://twitter.com/jeroenooms"
-              label={<Twitter />}
+              label={<Twitter className={styles.icon} />}
               title="Twitter"
             />
           </li>
           <li>
             <ExternalLink
               href="https://nl.linkedin.com/in/jeroenooms"
-              label={<Linkedin />}
+              label={<Linkedin className={styles.icon} />}
               title="Linkedin"
             />
           </li>
           <li>
             <ExternalLink
               href="https://github.com/jeroenoomsNL"
-              label={<Github />}
+              label={<Github className={styles.icon} />}
               title="Github"
             />
           </li>

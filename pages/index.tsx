@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/script";
 import { Footer } from "../components/Footer/Footer";
 import { Hero } from "../components/Hero/Hero";
 import { TechStack } from "../components/TechStack/TechStack";
@@ -27,6 +28,16 @@ export default function Home() {
         <meta property="og:url" content="https://www.jeroenooms.nl/" />
         <meta name="twitter:site" content="@jeroenooms" />
       </Head>
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-C7DFRL1T2F"
+      />
+      <Script
+        id="google-analytics"
+        dangerouslySetInnerHTML={{
+          __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-C7DFRL1T2F');`,
+        }}
+      />
       <main>
         <Hero />
         <TechStack />

@@ -4,6 +4,7 @@ import {
   GraphQLLogo,
   NetlifyLogo,
   NextjsLogo,
+  StorybookLogo,
   TypescriptLogo,
   VSCodeLogo,
 } from "../Icons/Icons";
@@ -16,7 +17,7 @@ export const TechStack = () => (
     <article className="intro">
       <p>
         Every developer must have it&apos;s preferred tech stack. Mine is the{" "}
-        <ExternalLink href="https://jamstack.org/" label="JAM stack" />, which
+        <ExternalLink href="https://jamstack.org" label="JAM stack" />, which
         literally means JavaScript, API &amp; Markup. With a JAM stack
         architecture, developers are able to build fast, secure and scalable web
         applications.
@@ -34,7 +35,7 @@ export const TechStack = () => (
         </p>
         <div className={styles.buttonContainer}>
           <ExternalLinkButton
-            href="https://www.typescriptlang.org/"
+            href="https://www.typescriptlang.org"
             label="More about TypeScript"
             title="Learn more about TypeScript"
           />
@@ -67,7 +68,7 @@ export const TechStack = () => (
         </p>
         <div className={styles.buttonContainer}>
           <ExternalLinkButton
-            href="https://www.contentful.com/"
+            href="https://www.contentful.com"
             label="More about Contentful"
             title="Learn more about Contentful"
           />
@@ -83,7 +84,7 @@ export const TechStack = () => (
         </p>
         <div className={styles.buttonContainer}>
           <ExternalLinkButton
-            href="https://www.netlify.com/"
+            href="https://www.netlify.com"
             label="More about Netlify"
             title="Learn more about Netlify"
           />
@@ -102,7 +103,7 @@ export const TechStack = () => (
         </p>
         <div className={styles.buttonContainer}>
           <ExternalLinkButton
-            href="https://graphql.org/"
+            href="https://graphql.org"
             label="More about GraphQL"
             title="Learn more about GraphQL"
           />
@@ -120,9 +121,26 @@ export const TechStack = () => (
         </p>
         <div className={styles.buttonContainer}>
           <ExternalLinkButton
-            href="https://code.visualstudio.com/"
+            href="https://code.visualstudio.com"
             label="More about Visual Studio Code"
             title="Learn more about Visual Studio Code"
+          />
+        </div>
+      </div>
+      <div className={styles.techBlock}>
+        <h3>
+          <StorybookLogo style={{ width: "auto", height: "40px" }} />
+        </h3>
+        <p>
+          Storybook is an open source tool for building UI components and pages
+          in isolation. It streamlines UI development, testing, and
+          documentation.
+        </p>
+        <div className={styles.buttonContainer}>
+          <ExternalLinkButton
+            href="https://storybook.js.org"
+            label="More about Storybook"
+            title="Learn more about Storybook"
           />
         </div>
       </div>

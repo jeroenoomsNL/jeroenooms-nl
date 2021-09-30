@@ -38,10 +38,10 @@ const InfoCard = () => (
       <div className={styles.infoContent}>
         <div className={styles.avatarContainer}>
           <Image
-            src="/images/avatar.jpg"
+            src="/images/jeroen-ooms-avatar.jpg"
             className={styles.avatar}
-            alt="Jeroen Ooms, frontend developer. The thumb is a myth."
-            title="Jeroen Ooms, frontend developer. The thumb is a myth."
+            alt="Jeroen Ooms, frontend developer at Xebia"
+            title="Jeroen Ooms, frontend developer at Xebia"
             layout="responsive"
             width="100"
             height="100"

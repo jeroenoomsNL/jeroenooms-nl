@@ -1,4 +1,5 @@
 module.exports = {
+  swcMinify: true,
   reactStrictMode: true,
   images: {
     deviceSizes: [320, 420, 720, 1080],

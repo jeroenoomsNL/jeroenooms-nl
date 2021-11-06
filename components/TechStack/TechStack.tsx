@@ -112,24 +112,6 @@ export const TechStack = () => (
       </div>
       <div className={styles.techBlock}>
         <h3>
-          <VSCodeLogo style={{ width: "auto", height: "40px" }} />
-        </h3>
-        <p>
-          Visual Studio Code is a lightweight but powerful source code editor
-          which runs on your desktop and is available for Windows, macOS and
-          Linux. It comes with built-in support for JavaScript, TypeScript and
-          Node.js and has a rich ecosystem of extensions for other languages.
-        </p>
-        <div className={styles.buttonContainer}>
-          <ExternalLinkButton
-            href="https://code.visualstudio.com"
-            label="More about Visual Studio Code"
-            title="Learn more about Visual Studio Code"
-          />
-        </div>
-      </div>
-      <div className={styles.techBlock}>
-        <h3>
           <StorybookLogo style={{ width: "auto", height: "40px" }} />
         </h3>
         <p>

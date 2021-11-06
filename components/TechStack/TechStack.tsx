@@ -46,9 +46,10 @@ export const TechStack = () => (
           <NextjsLogo style={{ width: "auto", height: "40px" }} />
         </h3>
         <p>
-          Next.js gives the best developer experience with all the features you
-          need for production: hybrid static &amp; server rendering, TypeScript
-          support, smart bundling, route pre-fetching, and more.
+          Next.js (based on React) gives the best developer experience with all
+          the features you need for production: hybrid static &amp; server
+          rendering, TypeScript support, smart bundling, route pre-fetching, and
+          more.
         </p>
         <div className={styles.buttonContainer}>
           <ExternalLinkButton

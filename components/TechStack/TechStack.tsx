@@ -16,7 +16,8 @@ export const TechStack = () => (
 
     <article className="intro">
       <p>
-        Every developer must have it&apos;s preferred tech stack. Mine is the{" "}
+        Every experienced developer must have it&apos;s preferred tech stack.
+        Mine is the{" "}
         <ExternalLink href="https://jamstack.org" label="JAM stack" />, which
         literally means JavaScript, API &amp; Markup. With a JAM stack
         architecture, developers are able to build fast, secure and scalable web

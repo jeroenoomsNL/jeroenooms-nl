@@ -19,6 +19,7 @@ const ImageCard = ({
   image: { image, title },
 }: ImageCardProps): ReactElement => (
   <div className={styles.card}>
+    <h3>{title}</h3>
     <Image
       src={image}
       width="100"

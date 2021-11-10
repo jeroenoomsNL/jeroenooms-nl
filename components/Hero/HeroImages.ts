@@ -36,10 +36,9 @@ export const images: ImageType[] = [
       "My favorite countries for holidays are Spain and Italy. I'm learning Spanish by the way, como estas?!",
   },
   {
-    key: "running-medals",
-    image: "/images/running-medals.jpg",
-    title:
-      "I ran multiple races with distances between 10km and a half marathon. I'm not a pro, it's just for fun!",
+    key: "speaker-on-conferences",
+    image: "/images/speaker-on-conferences.jpg",
+    title: "I often talk about my work on conferences and events.",
   },
   {
     key: "conference",
@@ -48,10 +47,9 @@ export const images: ImageType[] = [
       "I often visit conferences about front-end and web technologies. It always inspires me!",
   },
   {
-    key: "camino-2",
-    image: "/images/camino-2.jpg",
-    title:
-      "I walked the camino from Porto to Santiago de Compostella. It was a wunderful experience!",
+    key: "running-sunset",
+    image: "/images/running-sunset.jpg",
+    title: "I like running in the mornings or evenings.",
   },
   {
     key: "copenhagen",
@@ -59,14 +57,16 @@ export const images: ImageType[] = [
     title: "Copenhagen is one of my favorite cities.",
   },
   {
-    key: "speaker-on-conferences",
-    image: "/images/speaker-on-conferences.jpg",
-    title: "I often talk about my work on conferences and events.",
+    key: "running-medals",
+    image: "/images/running-medals.jpg",
+    title:
+      "I ran multiple races with distances between 10km and a half marathon. I'm not a pro, it's just for fun!",
   },
   {
-    key: "running-sunset",
-    image: "/images/running-sunset.jpg",
-    title: "I like running in the mornings or evenings.",
+    key: "camino-2",
+    image: "/images/camino-2.jpg",
+    title:
+      "I walked the camino from Porto to Santiago de Compostella. It was a wunderful experience!",
   },
   {
     key: "comics",

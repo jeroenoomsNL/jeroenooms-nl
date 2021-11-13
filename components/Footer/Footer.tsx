@@ -3,6 +3,13 @@ import styles from "./Footer.module.scss";
 
 export const Footer = () => (
   <footer className={styles.footer}>
+    <img
+      src="/backgrounds/waves.svg"
+      alt="Waves separator generated with haikei.app"
+      width="960"
+      height="150"
+      style={{ width: "100%", height: "auto" }}
+    />
     <div className="wrapper">
       Created by <strong>Jeroen Ooms</strong> with{" "}
       <ExternalLink

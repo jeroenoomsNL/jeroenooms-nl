@@ -8,7 +8,7 @@ export const Footer = () => (
       alt="Waves separator generated with haikei.app"
       width="960"
       height="150"
-      style={{ width: "100%", height: "auto" }}
+      className={styles.divider}
     />
     <div className="wrapper">
       Created by <strong>Jeroen Ooms</strong> with{" "}

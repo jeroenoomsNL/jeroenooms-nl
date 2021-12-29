@@ -10,21 +10,23 @@ export const Footer = () => (
       height="150"
       className={styles.divider}
     />
-    <div className="wrapper">
-      Created by <strong>Jeroen Ooms</strong> with{" "}
-      <ExternalLink
-        href="https://nextjs.org"
-        label="Next.js"
-        title="Next.js"
-        className="light"
-      />{" "}
-      and{" "}
-      <ExternalLink
-        href="https://fontawesome.com/license"
-        label="Font Awesome"
-        title="Font Awesome license"
-        className="light"
-      />
+    <div className={styles.footerContent}>
+      <div className="wrapper">
+        Created by <strong>Jeroen Ooms</strong> with{" "}
+        <ExternalLink
+          href="https://nextjs.org"
+          label="Next.js"
+          title="Next.js"
+          className="light"
+        />{" "}
+        and{" "}
+        <ExternalLink
+          href="https://fontawesome.com/license"
+          label="Font Awesome"
+          title="Font Awesome license"
+          className="light"
+        />
+      </div>
     </div>
   </footer>
 );

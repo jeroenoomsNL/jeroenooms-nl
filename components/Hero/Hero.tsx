@@ -70,7 +70,14 @@ const InfoCard = () => (
             title="Jeroen Ooms on Github"
             className="light"
           />{" "}
-          I like tech, running, comics and craft beers.
+          I like tech, running,{" "}
+          <ExternalLink
+            href="https://striplezer.nl"
+            label="comics"
+            title="Striplezer blog"
+            className="light"
+          />{" "}
+          and craft beers.
         </p>
 
         <ul className={styles.icons}>

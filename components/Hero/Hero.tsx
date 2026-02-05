@@ -41,8 +41,8 @@ const InfoCard = () => (
           <Image
             src="/images/jeroen-ooms-avatar.jpg"
             className={styles.avatar}
-            alt="Jeroen Ooms, frontend developer @ Xebia"
-            title="Jeroen Ooms, frontend developer @ Xebia"
+            alt="Jeroen Ooms, frontend developer"
+            title="Jeroen Ooms, frontend developer"
             width="100"
             height="100"
             priority={true}
@@ -54,13 +54,7 @@ const InfoCard = () => (
           Hi, my name is <strong>Jeroen Ooms</strong>!
         </h1>
         <p>
-          I&apos;m a Dutch front-end developer, working at{" "}
-          <ExternalLink
-            href="https://xebia.com"
-            label="Xebia"
-            className="light"
-          />
-          .
+          I&apos;m a Dutch front-end developer.
           <br />
           Besides{" "}
           <ExternalLink

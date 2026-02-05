@@ -26,9 +26,9 @@ const ImageCard = ({
       height="100"
       alt={title}
       title={title}
-      layout="responsive"
       loading="eager"
       sizes="20vw"
+      className={styles.image}
     />
   </div>
 );
@@ -43,7 +43,6 @@ const InfoCard = () => (
             className={styles.avatar}
             alt="Jeroen Ooms, frontend developer @ Xebia"
             title="Jeroen Ooms, frontend developer @ Xebia"
-            layout="responsive"
             width="100"
             height="100"
             priority={true}

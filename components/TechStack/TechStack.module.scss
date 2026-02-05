@@ -1,4 +1,4 @@
-@import "../../styles/breakpoints";
+@use "../../styles/breakpoints";
 
 .blocks {
   display: flex;
@@ -15,11 +15,11 @@
   display: flex;
   flex-direction: column;
 
-  @include breakpoint("small") {
+  @include breakpoints.breakpoint("small") {
     width: calc(50% - 12px);
   }
 
-  @include breakpoint("medium") {
+  @include breakpoints.breakpoint("medium") {
     width: calc(33.3333% - 16px);
   }
 

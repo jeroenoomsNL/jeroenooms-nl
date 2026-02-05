@@ -1,4 +1,4 @@
-@import "../../styles/breakpoints";
+@use "../../styles/breakpoints";
 
 .cards {
   background: var(--color-dark-blue);
@@ -37,7 +37,7 @@
     transition: transform 0.3s ease-in-out;
   }
 
-  @include breakpoint("large") {
+  @include breakpoints.breakpoint("large") {
     &:hover:before {
       position: absolute;
       top: 0px;
@@ -66,7 +66,7 @@
     }
   }
 
-  @include breakpoint("huge") {
+  @include breakpoints.breakpoint("huge") {
     &:nth-child(4) h3 {
       bottom: 0;
       padding-right: 35%;
@@ -79,7 +79,7 @@
     }
   }
 
-  @include breakpoint("insane") {
+  @include breakpoints.breakpoint("insane") {
     &:nth-child(4) h3 {
       bottom: 0;
       padding-right: 1.5rem;
@@ -109,7 +109,7 @@
     display: none;
   }
 
-  @include breakpoint("medium") {
+  @include breakpoints.breakpoint("medium") {
     width: 20%;
 
     &:nth-child(-n + 6) {
@@ -125,7 +125,7 @@
     }
   }
 
-  @include breakpoint("large") {
+  @include breakpoints.breakpoint("large") {
     width: 20%;
 
     &:nth-child(-n + 7) {
@@ -141,7 +141,7 @@
     }
   }
 
-  @include breakpoint("huge") {
+  @include breakpoints.breakpoint("huge") {
     width: calc(100% / 6);
 
     &:nth-child(-n + 8) {
@@ -157,7 +157,7 @@
     }
   }
 
-  @include breakpoint("insane") {
+  @include breakpoints.breakpoint("insane") {
     width: calc(100% / 8);
 
     &:nth-child(-n + 11) {
@@ -181,16 +181,16 @@
   position: relative;
   z-index: 2;
 
-  @include breakpoint("large") {
+  @include breakpoints.breakpoint("large") {
     flex: 1 0 60%;
     position: relative;
   }
 
-  @include breakpoint("huge") {
+  @include breakpoints.breakpoint("huge") {
     flex: 1 0 66.6666666%;
   }
 
-  @include breakpoint("insane") {
+  @include breakpoints.breakpoint("insane") {
     flex: 1 0 50%;
   }
 
@@ -205,15 +205,15 @@
     margin: 0 0 0.5em;
     text-align: center;
 
-    @include breakpoint("small") {
+    @include breakpoints.breakpoint("small") {
       font-size: 1.75em;
     }
 
-    @include breakpoint("large") {
+    @include breakpoints.breakpoint("large") {
       margin-top: 2em;
     }
 
-    @include breakpoint("huge") {
+    @include breakpoints.breakpoint("huge") {
       font-size: 2em;
     }
   }
@@ -224,22 +224,22 @@
     margin: 0 0 1em;
     text-align: center;
 
-    @include breakpoint("small") {
+    @include breakpoints.breakpoint("small") {
       font-size: 1.2em;
     }
 
-    @include breakpoint("large") {
+    @include breakpoints.breakpoint("large") {
       margin: 0 0 1em;
     }
 
-    @include breakpoint("huge") {
+    @include breakpoints.breakpoint("huge") {
       font-size: 1.5em;
     }
   }
 }
 
 .info {
-  @include breakpoint("large") {
+  @include breakpoints.breakpoint("large") {
     align-items: center;
     bottom: 0;
     display: flex;
@@ -256,7 +256,7 @@
   max-width: 600px;
   padding: 1em;
 
-  @include breakpoint("large") {
+  @include breakpoints.breakpoint("large") {
     max-width: 50vw;
   }
 }
@@ -270,7 +270,7 @@
   width: 100px;
   height: 100px;
 
-  @include breakpoint("large") {
+  @include breakpoints.breakpoint("large") {
     border-width: 4px;
     margin: 0;
     position: absolute;
@@ -280,14 +280,14 @@
     height: 150px;
   }
 
-  @include breakpoint("huge") {
+  @include breakpoints.breakpoint("huge") {
     left: calc(50% - 104px);
     top: -104px;
     width: 200px;
     height: 200px;
   }
 
-  @include breakpoint("insane") {
+  @include breakpoints.breakpoint("insane") {
     left: calc(50% - 129px);
     top: -129px;
     width: 250px;
@@ -330,4 +330,10 @@
   &:active {
     transform: scale(1.5);
   }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

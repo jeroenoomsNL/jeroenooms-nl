@@ -23,6 +23,7 @@
     "typescript": "5.9.3"
   },
   "overrides": {
-    "@types/react": "19.2.13"
+    "@types/react": "19.2.13",
+    "postcss": "8.5.15"
   }
 }
